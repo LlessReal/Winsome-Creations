@@ -1,0 +1,123 @@
+header.header2,
+header {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: red;
+    text-shadow: 0 0 3px yellow, 0 0 3px gold;
+    box-shadow: 0 0 25px black inset;
+    color:white;
+    border-style:groove;
+    border-width: 20px;
+    font-family: "Copperplate", "Garamond", sans-serif;
+    border-color:gold;
+    transition: 0.3s;
+}
+header.header2 { /*The headers in the other pages will have this, so the titles will be bigger*/
+    padding: 40px;
+    font-size: 40px;
+}
+header:hover { /*When you hover over the header, it will shine and make the stuff bigger*/
+    box-shadow: 0 0 100px yellow inset;
+    font-size: 50px;
+}
+header p { /*Paragraphs in all headers will be much smaller*/
+    font-size: 15px;
+    font-weight: 10;
+}
+
+body { /*Unique background for all pages*/
+background-image: linear-gradient(to right, gold,red,orange,red,gold,red,orange,red,gold);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-image: linear-gradient(to right, orange, yellow,red);
+    display: flex;
+}
+nav ul li {
+    border-top: solid 5px black;
+    border-right: solid 5px green;
+    transition: 0.3s;
+    flex: 1; /*Makes all items the growth of 1*/
+    border-bottom: ridge 5px darkgreen;
+}
+nav ul li:last-child {border-right: none;}
+nav ul li a {transition: 0.3s;}
+nav ul li:hover {box-shadow: 0 0 20px red inset;}
+nav ul li a:hover {color: rgb(112, 208, 22);}
+li a {
+    display:block;
+    text-decoration: none;
+    font-family: "Impact";
+    font-size: 30px;
+    text-align: center;
+    color:rgb(28, 83, 31);
+    padding: 10px;
+}
+
+img {
+    margin: 40px 35%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border: solid 3px gold;
+    box-shadow: 0 0 20px orange, 10px 10px 0 gray;
+    transition: 0.5s;
+}
+img:active {
+    margin: 40px 30%;
+    width:400px;
+    height:400px;
+    box-shadow: 0 0 20px orange, 40px 40px 0 rgb(59, 56, 56), 0 0 40px yellow, 0 0 70px 70px gold;
+}
+li.desc,
+li.desc:last-child,
+li.desc:first-child,
+p {
+    color:white;
+    text-shadow: 0 0 3px rgb(186, 15, 147);
+    font-family: impact;
+    margin: 40px 0 50px;
+    transition: 0.5s;
+}
+p.desc {
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+}
+
+img:active + p.desc {
+    opacity: 0;
+}
+
+li.desc {transition: 0.3s; margin: 10px 0 10px;}
+li.desc:first-child {margin: 40px 0 10px;}
+li.desc:last-child {margin: 0 0 50px;}
+li.desc:hover {text-shadow: 0 0 20px yellow;}
+
+h3 {
+    color:green;
+    text-shadow: 0 0 5px purple;
+    font-size: 40px;
+    font-family: impact;
+    font: style weight size family; /*Shorthand for all of the properties*/
+    display: inline;
+    background-color: red;
+    padding: 10px;
+    border: ridge 10px orange;
+    border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 yellow inset, 10px 10px 10px black;
+}
+h3:hover {
+    color: rgb(112, 208, 22);
+    box-shadow: 0 0 30px yellow inset, 10px 10px 10px black;
+}
